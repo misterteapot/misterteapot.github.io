@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+<link rel="stylesheet" href="styles/bootstrap.min.css">
     <title>Mister Teapot by Rich Williams</title>
     <script
             src="js/cloudinary-core-shrinkwrap.js"
@@ -16,7 +16,7 @@
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#"><img src="images/tea.svg" height="30" class="d-inline-block align-top mr-2" alt="">Mister Teapot</a>
+    <a class="navbar-brand" href="#"><img src="images/teapot-30.png" height="30" class="d-inline-block align-top mr-2" alt="">Mister Teapot</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -54,18 +54,25 @@
         -->
     </div>
 </nav>
-<img
-        data-src="https://res.cloudinary.com/mrteapot/image/fetch/c_thumb/https://misterteapot.com/images/mister-teapot-and-miss-cookie-jar.png"
-        class="cld-responsive" style="width: 100vw; height: 100vh">
+<div  style="width: 100vw; height: 100vh;
+background-image: url('https://res.cloudinary.com/mrteapot/image/fetch/f_auto,c_fill,g_auto/https://misterteapot.com/images/mister-teapot-and-miss-cookie-jar.png');
+background-position: center center; background-size: cover">
+</div>
 <div class="container">
-    <h1 class="mt-5">Mister Teapot </h1>
-
-    <p>
+    <h1 class="mt-5">Mister Teapot <small>by Rich Williams</small></h1>
+<div class="row align-items-center">
+<div class="col">    <p>
         Mister Teapot asked Miss Cookie Jar to his house by the sea, <br />
-        He said, "I'm a little teapot, short and stout, why don't you marry me? <br />
-        We can go to the city! I'll be a waiter and you can teach."
+        He said, "I'm a little teapot, short and stout, why don't you marry me?" <br />
+
     </p>
-    <p>
+</div>
+    <div class="col">
+        <img src="https://res.cloudinary.com/mrteapot/image/fetch/f_auto,c_fill,g_auto/https://misterteapot.com/images/mister-teapot-and-miss-cookie-jar.png"
+             class="img-fluid cld-responsive rounded" />
+    </div>
+</div>
+    <p>"We can go to the city! I'll be a waiter and you can teach."
         They unfolded their checkered napkin and ate cookies on the beach.
     </p>
     <p>
