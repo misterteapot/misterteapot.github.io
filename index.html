@@ -9,7 +9,22 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Mister Teapot by Rich Williams</title>
+    <style>
+        .videoWrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 */
+            padding-top: 0; /* 25px; */
+            height: 0;
+        }
 
+        .videoWrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -53,6 +68,10 @@
         -->
     </div>
 </nav>
+<div class="videoWrapper">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/PF7GEAotzMw" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 <div style="width: 100vw; height: calc(100vh - 56px);
 background-image: url('https://res.cloudinary.com/mrteapot/image/fetch/f_auto,c_fill,g_auto/https://misterteapot.com/images/mister-teapot-and-miss-cookie-jar.png');
 background-position: center center; background-size: cover" class="cld-responsive">
@@ -64,7 +83,7 @@ background-position: center center; background-size: cover" class="cld-responsiv
     <div class="row align-items-center mb-3">
         <div class="col-lg-6"><p>
             Mister Teapot asked Miss Cookie Jar to his house by the sea, <br/>
-            He said, "I'm a little teapot, short and stout, why don't you marry me?"
+            He said, "I'm a little teapot, short and stout, why don't you marry me?
         </p>
         </div>
         <div class="col-lg-6">
